@@ -1,6 +1,6 @@
 Curso: Microcontroladores I
 
-Autor: Luiggi Smith Saba 
+Autor: Luiggi Smith Saba  Martinez
 
 Aquí abordaremos códigos de programación trabajados en Mplab IDE XC8 para el desarrollo del curso
 
@@ -13,5 +13,5 @@ Lenguaje: ASEMBLER
 UNIVERSIDAD NACIONAL DE PIURA, PERÚ
 
 1. Retardos
-2. Practica_01
+2. Practic_01
 3. Practica_02
