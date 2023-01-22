@@ -138,8 +138,6 @@ Int_Loop:
 	NOP                             ; 1Tcy
 	DECFSZ	contador2,1,0	        ; (M-1)x 1Tcy(cuando no salta) + 2 Tcy (al saltar).
 	GOTO	Ext_Loop		; (M-1)x 2Tcy
-<<<<<<< HEAD
 	RETURN                          ;2Tcy
-=======
-	RETURN                          ;2Tcy
+
 
