@@ -1,3 +1,22 @@
+;------------------------------------------------- -----	
+;archivo Retardos
+;brief Libreria de retardos en us y ms
+;entorno Mplab X IDE
+;versión v6 .05
+;autor Saba Martínez Luiggi Smith
+;Fecha:     09 / 01 / 2023
+    
+;config oscilador para 4MHz
+
+;Config_OSC:
+    ;Configuración del Oscilador Interno a una frecuencia de 4MHz
+    ;BANKSEL OSCCON1
+    ;MOVLW 0x60     ;Seleccionamos el bloque del osc interno (HFINTOSC) con un DIV=1
+    ;MOVWF OSCCON1, 1
+    ;MOVLW 0x02     ;Seleccionamos una frecuencia de 4MHz
+    ;MOVWF OSCFRQ, 1   
+    ;RETORNO
+;En esta libreria se estableceran tiempos para hacer los retardos en us y ms utilizando rutinas y subrutinas con nemonicos que ayuden a consumir Tcy para establecer cada retardo como se requiera.
 PSECT udata_acs
 contador1: DS 1      ; reserva 1 byte en acces ram
 contador2: DS 1
