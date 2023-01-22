@@ -124,5 +124,18 @@ Delay_200ms:			        ;2Tcy -- Call
 	GOTO	Delay_ms		;2Tcy
 
 Delay_250ms:				;2Tcy -- Call 
-	MOVLW	250			;1Tcy?
-
+	MOVLW	250			;1Tcy (Valor de "M")
+	MOVWF	contador2,0		;2Tcy
+Delay_ms:
+	MOVWF	contador2,0	        ;1Tcy.
+Ext_Loop:
+	MOVLW	249			; M x 1Tcy. Este es el valor de "K".
+	MOVWF	contador1,0	        ; M x 1Tcy
+Int_Loop:
+	NOP				; K x M x 1Tcy
+	DECFSZ	contador1,1,0	        ; (K-1)x M x 1Tcy (cuando no salta) + M x 2Tcy (al saltar).
+	GOTO	Int_Loop		; (K-1)x M x 2Tcy
+	NOP                             ; 1Tcy
+	DECFSZ	contador2,1,0	        ; (M-1)x 1Tcy(cuando no salta) + 2 Tcy (al saltar).
+	GOTO	Ext_Loop		; (M-1)x 2Tcy
+	RETURN                          ;2Tcy
