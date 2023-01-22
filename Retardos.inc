@@ -1,8 +1,8 @@
-;------------------------------------------------------	
+;------------------------------------------------------;------------------------------------------------------	
 ;file     Retardos
 ;brief    Libreria de retardos en us y ms
 ;entorno  Mplab X IDE
-;versión  v6.05
+;versiÃ³n  v6.05
 ;autor    Saba Martinez Luiggi Smith
 ;Date:    09/01/2023
     
@@ -138,4 +138,8 @@ Int_Loop:
 	NOP                             ; 1Tcy
 	DECFSZ	contador2,1,0	        ; (M-1)x 1Tcy(cuando no salta) + 2 Tcy (al saltar).
 	GOTO	Ext_Loop		; (M-1)x 2Tcy
+<<<<<<< HEAD
 	RETURN                          ;2Tcy
+=======
+	RETURN                          ;2Tcy
+>>>>>>> 27f92f7d485c07022bb6c19458bb5d7758304fa8
