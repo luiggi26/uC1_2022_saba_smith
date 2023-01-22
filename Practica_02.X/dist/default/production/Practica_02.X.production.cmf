@@ -1,0 +1,484 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/Practica_02.o
+CODE - 0 0 0 1B0 1 1
+code CODE 0 1FF60 1FF60 A0 1 2
+resetVect CODE 0 1FF5C 1FF5C 4 1 2
+udata_acs COMRAM 1 500 500 2 1 1
+config CONFIG 4 300000 300000 23 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 560-36FF 1
+SFR 1B0-4FF 1
+SFR 3700-3FFF 1
+BANK5 560-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 1B0-1FF5B 1
+IDLOC 200000-20003F 1
+SMALLCONST 4000-1FF5B 1
+CODE 1B0-1FF5B 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BANK16 1000-10FF 1
+BANK17 1100-11FF 1
+BANK18 1200-12FF 1
+BANK19 1300-13FF 1
+BANK20 1400-14FF 1
+BANK21 1500-15FF 1
+BANK22 1600-16FF 1
+BANK23 1700-17FF 1
+BANK24 1800-18FF 1
+BANK25 1900-19FF 1
+BANK26 1A00-1AFF 1
+BANK27 1B00-1BFF 1
+BANK28 1C00-1CFF 1
+BANK29 1D00-1DFF 1
+BANK30 1E00-1EFF 1
+BANK31 1F00-1FFF 1
+BANK32 2000-20FF 1
+BANK33 2100-21FF 1
+BANK34 2200-22FF 1
+BANK35 2300-23FF 1
+BANK36 2400-24FF 1
+BANK37 2500-25FF 1
+BANK38 2600-26FF 1
+BANK39 2700-27FF 1
+BANK40 2800-28FF 1
+BANK41 2900-29FF 1
+BANK42 2A00-2AFF 1
+BANK43 2B00-2BFF 1
+BANK44 2C00-2CFF 1
+BANK45 2D00-2DFF 1
+BANK46 2E00-2EFF 1
+BANK47 2F00-2FFF 1
+BANK48 3000-30FF 1
+BANK49 3100-31FF 1
+BANK50 3200-32FF 1
+BANK51 3300-33FF 1
+BANK52 3400-34FF 1
+BANK53 3500-35FF 1
+BANK54 3600-36FF 1
+BIGRAM 500-36FF 1
+BIGSFR 1B0-4FF 1
+BIGSFR 3700-3FFF 1
+COMRAM 502-55F 1
+CONFIG 300023-300023 1
+EEDATA 380000-3803FF 1
+MEDIUMCONST 4000-FFFF 1
+MEDIUMCONST 14000-1FF5B 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/Practica_02.o
+0 CODE ABS >20:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+4 CODE ABS >21:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+8 CODE ABS >22:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+C CODE ABS >28:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+E CODE ABS >29:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+10 CODE ABS >30:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+14 CODE ABS >31:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+18 CODE ABS >32:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+1A CODE ABS >33:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+1E CODE ABS >34:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+22 CODE ABS >35:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+26 CODE ABS >39:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+28 CODE ABS >40:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+2A CODE ABS >41:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+2E CODE ABS >42:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+32 CODE ABS >43:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+34 CODE ABS >44:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+38 CODE ABS >45:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+3C CODE ABS >46:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+40 CODE ABS >49:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+42 CODE ABS >50:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+44 CODE ABS >51:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+48 CODE ABS >52:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+4C CODE ABS >53:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+4E CODE ABS >54:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+52 CODE ABS >55:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+56 CODE ABS >56:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+5A CODE ABS >60:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+5C CODE ABS >61:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+5E CODE ABS >62:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+62 CODE ABS >63:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+66 CODE ABS >64:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+68 CODE ABS >65:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+6C CODE ABS >66:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+70 CODE ABS >67:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+74 CODE ABS >71:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+76 CODE ABS >72:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+78 CODE ABS >73:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+7C CODE ABS >74:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+80 CODE ABS >75:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+82 CODE ABS >76:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+86 CODE ABS >77:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+8A CODE ABS >78:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+8E CODE ABS >80:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+90 CODE ABS >81:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+92 CODE ABS >82:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+96 CODE ABS >83:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+9A CODE ABS >84:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+9C CODE ABS >85:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+A0 CODE ABS >86:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+A4 CODE ABS >87:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+A8 CODE ABS >90:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+AA CODE ABS >91:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+AC CODE ABS >92:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+B0 CODE ABS >93:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+B4 CODE ABS >94:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+B6 CODE ABS >95:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+BA CODE ABS >96:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+BE CODE ABS >97:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+C2 CODE ABS >100:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+C4 CODE ABS >101:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+C6 CODE ABS >102:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+CA CODE ABS >103:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+CE CODE ABS >104:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+D0 CODE ABS >105:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+D4 CODE ABS >106:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+D8 CODE ABS >107:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+DC CODE ABS >110:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+DE CODE ABS >111:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+E0 CODE ABS >112:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+E4 CODE ABS >113:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+E8 CODE ABS >114:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+EA CODE ABS >115:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+EE CODE ABS >116:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+F2 CODE ABS >117:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+F6 CODE ABS >119:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+F8 CODE ABS >120:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+FA CODE ABS >121:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+FE CODE ABS >122:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+102 CODE ABS >123:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+104 CODE ABS >124:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+108 CODE ABS >125:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+10C CODE ABS >126:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+110 CODE ABS >128:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+112 CODE ABS >129:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+116 CODE ABS >135:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+118 CODE ABS >136:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+11A CODE ABS >137:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+11E CODE ABS >138:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+122 CODE ABS >139:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+126 CODE ABS >140:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+12A CODE ABS >145:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+12C CODE ABS >146:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+12E CODE ABS >147:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+132 CODE ABS >148:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+136 CODE ABS >149:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+13A CODE ABS >150:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+13E CODE ABS >154:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+140 CODE ABS >155:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+142 CODE ABS >156:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+146 CODE ABS >157:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+14A CODE ABS >158:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+14E CODE ABS >159:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+152 CODE ABS >164:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+154 CODE ABS >165:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+156 CODE ABS >166:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+15A CODE ABS >167:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+15E CODE ABS >168:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+162 CODE ABS >169:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+166 CODE ABS >173:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+168 CODE ABS >174:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+16A CODE ABS >175:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+16E CODE ABS >176:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+172 CODE ABS >177:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+176 CODE ABS >178:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+17A CODE ABS >181:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+17C CODE ABS >182:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+17E CODE ABS >183:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+182 CODE ABS >184:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+186 CODE ABS >185:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+18A CODE ABS >186:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+18E CODE ABS >187:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+192 CODE ABS >196:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+194 CODE ABS >197:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+196 CODE ABS >198:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+198 CODE ABS >199:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+19A CODE ABS >200:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+19C CODE ABS >201:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+19E CODE ABS >204:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+1A0 CODE ABS >205:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+1A2 CODE ABS >206:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+1A4 CODE ABS >209:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+1A6 CODE ABS >210:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+1A8 CODE ABS >211:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+1AA CODE ABS >212:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+1AC CODE ABS >213:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+1AE CODE ABS >214:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+1FF5C resetVect CODE >16:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X\Practica_02.s
+1FF60 code CODE >9:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF62 code CODE >10:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF64 code CODE >12:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF66 code CODE >13:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF68 code CODE >14:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF6C code CODE >15:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF6E code CODE >18:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF70 code CODE >19:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF72 code CODE >21:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF74 code CODE >22:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF76 code CODE >23:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF78 code CODE >25:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF7A code CODE >26:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF7C code CODE >28:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF7E code CODE >29:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF80 code CODE >30:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF84 code CODE >31:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF86 code CODE >35:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF88 code CODE >36:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF8A code CODE >39:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF8C code CODE >41:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF8E code CODE >42:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF92 code CODE >43:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF94 code CODE >46:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF96 code CODE >47:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF98 code CODE >50:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF9A code CODE >52:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FF9C code CODE >53:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFA0 code CODE >54:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFA2 code CODE >59:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFA4 code CODE >60:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFA6 code CODE >62:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFA8 code CODE >63:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFAA code CODE >64:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFAE code CODE >65:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFB0 code CODE >69:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFB2 code CODE >70:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFB4 code CODE >73:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFB6 code CODE >75:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFB8 code CODE >76:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFBC code CODE >77:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFBE code CODE >86:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFC0 code CODE >88:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFC2 code CODE >89:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFC6 code CODE >91:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFC8 code CODE >92:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFCC code CODE >94:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFCE code CODE >95:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFD2 code CODE >97:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFD4 code CODE >98:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFD8 code CODE >100:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFDA code CODE >101:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFDE code CODE >103:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFE0 code CODE >104:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFE4 code CODE >107:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFE6 code CODE >108:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFE8 code CODE >110:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFEA code CODE >112:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFEC code CODE >113:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFEE code CODE >115:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFF0 code CODE >116:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFF2 code CODE >117:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFF6 code CODE >118:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFF8 code CODE >119:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFFA code CODE >120:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+1FFFE code CODE >121:C:\Users\PROPIETARIO\Documents\uC\uC1_2022_saba_smith\Practica_02.X/Retardos.inc
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 20000 0 ABS 0 - -
+__Hspace_1 502 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 600023 0 ABS 0 - -
+__Hudata_bank5 1B0 0 ABS 0 udata_bank5 -
+__Hudata_bank6 1B0 0 ABS 0 udata_bank6 -
+__Hudata_bank7 1B0 0 ABS 0 udata_bank7 -
+__Hudata_bank8 1B0 0 ABS 0 udata_bank8 -
+__Hudata_bank9 1B0 0 ABS 0 udata_bank9 -
+__Hudata_bank10 1B0 0 ABS 0 udata_bank10 -
+__Hudata_bank11 1B0 0 ABS 0 udata_bank11 -
+__Hudata_bank12 1B0 0 ABS 0 udata_bank12 -
+__Hudata_bank13 1B0 0 ABS 0 udata_bank13 -
+__Hudata_bank14 1B0 0 ABS 0 udata_bank14 -
+__Hudata_bank15 1B0 0 ABS 0 udata_bank15 -
+__Hudata_bank16 1B0 0 ABS 0 udata_bank16 -
+__Hudata_bank17 1B0 0 ABS 0 udata_bank17 -
+__Hudata_bank18 1B0 0 ABS 0 udata_bank18 -
+__Hudata_bank19 1B0 0 ABS 0 udata_bank19 -
+__Hudata_bank20 1B0 0 ABS 0 udata_bank20 -
+__Hudata_bank21 1B0 0 ABS 0 udata_bank21 -
+__Hudata_bank22 1B0 0 ABS 0 udata_bank22 -
+__Hudata_bank23 1B0 0 ABS 0 udata_bank23 -
+__Hudata_bank24 1B0 0 ABS 0 udata_bank24 -
+__Hudata_bank25 1B0 0 ABS 0 udata_bank25 -
+__Hudata_bank26 1B0 0 ABS 0 udata_bank26 -
+__Hudata_bank27 1B0 0 ABS 0 udata_bank27 -
+__Hudata_bank28 1B0 0 ABS 0 udata_bank28 -
+__Hudata_bank29 1B0 0 ABS 0 udata_bank29 -
+__Hudata_bank30 1B0 0 ABS 0 udata_bank30 -
+__Hudata_bank31 1B0 0 ABS 0 udata_bank31 -
+__Hudata_bank32 1B0 0 ABS 0 udata_bank32 -
+__Hudata_bank33 1B0 0 ABS 0 udata_bank33 -
+__Hudata_bank34 1B0 0 ABS 0 udata_bank34 -
+__Hudata_bank35 1B0 0 ABS 0 udata_bank35 -
+__Hudata_bank36 1B0 0 ABS 0 udata_bank36 -
+__Hudata_bank37 1B0 0 ABS 0 udata_bank37 -
+__Hudata_bank38 1B0 0 ABS 0 udata_bank38 -
+__Hudata_bank39 1B0 0 ABS 0 udata_bank39 -
+__Hudata_bank40 1B0 0 ABS 0 udata_bank40 -
+__Hudata_bank41 1B0 0 ABS 0 udata_bank41 -
+__Hudata_bank42 1B0 0 ABS 0 udata_bank42 -
+__Hudata_bank43 1B0 0 ABS 0 udata_bank43 -
+__Hudata_bank44 1B0 0 ABS 0 udata_bank44 -
+__Hudata_bank45 1B0 0 ABS 0 udata_bank45 -
+__Hudata_bank46 1B0 0 ABS 0 udata_bank46 -
+__Hudata_bank47 1B0 0 ABS 0 udata_bank47 -
+__Hudata_bank48 1B0 0 ABS 0 udata_bank48 -
+__Hudata_bank49 1B0 0 ABS 0 udata_bank49 -
+__Hudata_bank50 1B0 0 ABS 0 udata_bank50 -
+__Hudata_bank51 1B0 0 ABS 0 udata_bank51 -
+__Hudata_bank52 1B0 0 ABS 0 udata_bank52 -
+__Hudata_bank53 1B0 0 ABS 0 udata_bank53 -
+__Hudata_bank54 1B0 0 ABS 0 udata_bank54 -
+isa$xinst 0 0 ABS 0 - build/default/production/Practica_02.o
+__Hedata 1B0 0 ABS 0 edata -
+__Hudata 1B0 0 ABS 0 udata -
+__Hconfig 300023 0 CONFIG 4 config -
+__Ledata 1B0 0 ABS 0 edata -
+__Ludata 1B0 0 ABS 0 udata -
+__HCODE 1B0 0 ABS 0 CODE -
+__Hcode 1B0 0 ABS 0 code -
+__Hdata 1B0 0 ABS 0 data -
+__LCODE 0 0 ABS 0 CODE -
+__Lcode 1B0 0 ABS 0 code -
+__Ldata 1B0 0 ABS 0 data -
+__S0 20000 0 ABS 0 - -
+__S1 502 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Ludata_bank10 1B0 0 ABS 0 udata_bank10 -
+__Ludata_bank11 1B0 0 ABS 0 udata_bank11 -
+__Ludata_bank12 1B0 0 ABS 0 udata_bank12 -
+__Ludata_bank13 1B0 0 ABS 0 udata_bank13 -
+__Ludata_bank14 1B0 0 ABS 0 udata_bank14 -
+__Ludata_bank15 1B0 0 ABS 0 udata_bank15 -
+__Ludata_bank16 1B0 0 ABS 0 udata_bank16 -
+__Ludata_bank17 1B0 0 ABS 0 udata_bank17 -
+__Ludata_bank18 1B0 0 ABS 0 udata_bank18 -
+__Ludata_bank19 1B0 0 ABS 0 udata_bank19 -
+__Ludata_bank20 1B0 0 ABS 0 udata_bank20 -
+__Ludata_bank21 1B0 0 ABS 0 udata_bank21 -
+__Ludata_bank22 1B0 0 ABS 0 udata_bank22 -
+__Ludata_bank23 1B0 0 ABS 0 udata_bank23 -
+__Ludata_bank24 1B0 0 ABS 0 udata_bank24 -
+__Ludata_bank25 1B0 0 ABS 0 udata_bank25 -
+__Ludata_bank26 1B0 0 ABS 0 udata_bank26 -
+__Ludata_bank27 1B0 0 ABS 0 udata_bank27 -
+__Ludata_bank28 1B0 0 ABS 0 udata_bank28 -
+__Ludata_bank29 1B0 0 ABS 0 udata_bank29 -
+__Ludata_bank30 1B0 0 ABS 0 udata_bank30 -
+__Ludata_bank31 1B0 0 ABS 0 udata_bank31 -
+__Ludata_bank32 1B0 0 ABS 0 udata_bank32 -
+__Ludata_bank33 1B0 0 ABS 0 udata_bank33 -
+__Ludata_bank34 1B0 0 ABS 0 udata_bank34 -
+__Ludata_bank35 1B0 0 ABS 0 udata_bank35 -
+__Ludata_bank36 1B0 0 ABS 0 udata_bank36 -
+__Ludata_bank37 1B0 0 ABS 0 udata_bank37 -
+__Ludata_bank38 1B0 0 ABS 0 udata_bank38 -
+__Ludata_bank39 1B0 0 ABS 0 udata_bank39 -
+__Ludata_bank40 1B0 0 ABS 0 udata_bank40 -
+__Ludata_bank41 1B0 0 ABS 0 udata_bank41 -
+__Ludata_bank42 1B0 0 ABS 0 udata_bank42 -
+__Ludata_bank43 1B0 0 ABS 0 udata_bank43 -
+__Ludata_bank44 1B0 0 ABS 0 udata_bank44 -
+__Ludata_bank45 1B0 0 ABS 0 udata_bank45 -
+__Ludata_bank46 1B0 0 ABS 0 udata_bank46 -
+__Ludata_bank47 1B0 0 ABS 0 udata_bank47 -
+__Ludata_bank48 1B0 0 ABS 0 udata_bank48 -
+__Ludata_bank49 1B0 0 ABS 0 udata_bank49 -
+__Ludata_bank50 1B0 0 ABS 0 udata_bank50 -
+__Ludata_bank51 1B0 0 ABS 0 udata_bank51 -
+__Ludata_bank52 1B0 0 ABS 0 udata_bank52 -
+__Ludata_bank53 1B0 0 ABS 0 udata_bank53 -
+__Ludata_bank54 1B0 0 ABS 0 udata_bank54 -
+__Lconfig 0 0 CONFIG 4 config -
+isa$std 1 0 ABS 0 - build/default/production/Practica_02.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__HresetVect 1B0 0 ABS 0 resetVect -
+__Ludata_bank5 1B0 0 ABS 0 udata_bank5 -
+__Ludata_bank6 1B0 0 ABS 0 udata_bank6 -
+__Ludata_bank7 1B0 0 ABS 0 udata_bank7 -
+__Ludata_bank8 1B0 0 ABS 0 udata_bank8 -
+__Ludata_bank9 1B0 0 ABS 0 udata_bank9 -
+__LresetVect 1B0 0 ABS 0 resetVect -
+__Hudata_acs 1B0 0 ABS 0 udata_acs -
+__Ludata_acs 1B0 0 ABS 0 udata_acs -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+code 0 1FF60 1FF60 A0 1
+resetVect 0 1FF5C 1FF5C 4 1
+udata_acs 1 500 500 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
